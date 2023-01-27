@@ -3,7 +3,7 @@ import path from 'path'
 
 const app: Express = express()
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/*', (req: Request, res: Response) => {
   res.sendFile(path.join(__dirname, '/index.html'))
 })
 
